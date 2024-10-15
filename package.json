@@ -1,0 +1,33 @@
+{
+  "name": "TagTime",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build:backend": "NODE_ENV=production node esbuild.config.js",
+    "build:frontend": "vite build",
+    "dev:backend": "concurrently 'node esbuild.config.js --watch' 'nodemon --enable-source-maps dist/backend/index.js'",
+    "dev:frontend": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.5",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.2",
+    "concurrently": "^9.0.1",
+    "dotenv": "^16.4.5",
+    "esbuild": "^0.24.0",
+    "nodemon": "^3.1.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.4.9"
+  },
+  "dependencies": {
+    "express": "5",
+    "mongoose": "^8.7.1"
+  }
+}
